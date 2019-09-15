@@ -1,34 +1,15 @@
 # Appium Wunder QA Test
+
 Test Automation with Appium framework
 
-
-### Instalando Ambiente no MAC
-
-```ruby
-a. Instalar o Homebrew:
-   ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
-   
-b. Instalar JDK para o Mac:
-   http://www.oracle.com/technetwork/java/javase/downloads/index.html
-
-c. Instalando e configurando o rbenv:
-   brew install rbenv
-   echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-   rbenv install -l
-   rbenv install 2.3.1 #Ou versão superior estável
-   rbenv local 2.3.1
-
-d. Instalar Android Studio
-   https://developer.android.com/studio/index.html?hl=pt-br
-   
-e. Instalar Appium Desktop
-   http://appium.io/ => Clique em download e baixe a versão mais recente para o seu SO
-
-```
+### Dependencies
+  - Appium
+  - Android Studio
+  - JDK
 
 ### Gems of Ruby
 
-```ruby
+```
 gem install bundler
 gem install appium_lib
 ```
@@ -48,20 +29,23 @@ export PATH=$ANDROID_HOME/emulator/:$PATH
 ```
 
 
-### Executando o Projeto :dart:
+### How to execute the tests
 
-```ruby
-1. Faça um clone do projeto:
-   git clone https://gitlab.com/Thialison/Appium-Youse.git
+```
+1. clone the project:
+  git clone https://github.com/bnascimento89/WunderAndroidTest
 
-2. Emulando android virtual device: 
-   emulator @"<Nome do seu emulator>"&
+2. How to emulate a virtual android device: 
+  emulator @"<DeviceName>"&
    
-3. Abra o Appium e inicie o servidor.
+3. Up Appium server
 
-4. Executando todos os cenários da feature "Login": 
-   cucumber
+4. To execute all scenarios:
+  cucumber
    
-5. Executando features com report: 
-   cucumber -p report
+5. To execute equilateral scenario
+  cucumber -t @equilateral
+
+5. To execute scalene scenario
+  cucumber -t @scalene
 ```
