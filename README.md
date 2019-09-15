@@ -36,7 +36,7 @@ export PATH=$ANDROID_HOME/emulator/:$PATH
   git clone https://github.com/bnascimento89/WunderAndroidTest
 
 2. How to emulate a virtual android device: 
-  emulator @"<DeviceName>"&
+  emulator <DeviceName>
    
 3. Up Appium server
 
